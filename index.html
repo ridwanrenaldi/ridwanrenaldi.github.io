@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--The below tag is for browser tab color in phones chrome preffered -->
+    <meta name="theme-color" content="#f53f2b">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!--Type Below the thing that should apear under yoyr name in an Search Engine snipet -->
+    <meta name="description" content="Portfolio To your site">
+    <!--Type the your spealizations here -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, wavify.js, Developer">
+    <!--Write your name below -->
+    <meta name="author" content="Ridwan Renaldi">
+    <!--Add a square image of yours -->
+    <link rel="shortcut icon" href="assets/img/aboutme.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is the main compiled scss file-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--Css file for Icons use in skill section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <!--Font awesome (Best Icons site ) -->
+    <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
+    <!--For Css Animations in the site -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Enter your Name here and Speacializations so that ur site will be easily available on search engines-->
+    <title>Ridwan Renaldi | Web Developer</title>
+</head>
+
+<body>
+    <!--Landing div-->
+    <div class="landing">
+        <!--Make sure that the image u add here is a square image and for best performance compress the image -->
+        <div class="img animate__animated animate__slideInDown wow" data-wow-duration="1.5s" data-wow-delay="0.3s"><img src="assets/img/profile.png" alt="name photo"></div>
+        <div class="me animate__animated animate__slideInUp wow" data-wow-duration="1.5s" data-wow-delay="0.3s">
+            <!--Enter your name here-->
+            <section class="shortme">
+                <h2>Ridwan Renaldi</h2>
+            </section>
+            <h3 id="typed"></h3>
+
+            <div class="box box1 animate__animated animate__slideInLeft wow" data-wow-duration="1s" data-wow-delay="0s">
+                <div class="resume">
+                    <button type="submit"  onclick=" window.open('http:\/\/github.com/ridwanrenaldi', '_blank')">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+
+
+        <!--TypedJs -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script>
+            //Enter your specilizations here
+            var typed = new Typed("#typed", {
+                strings: ['Programmer', 'Engineer', 'Gamer ', 'Web Developer'],
+                typeSpeed: 50,
+                smartBackspace: true,
+                backSpeed: 35,
+                loop: true,
+                showCursor: false,
+            });
+        </script>
+        <!--Wow js is for aniamtion on scroll-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+
+
+        <!--Dont forget to follow me and star the repo on github !!!!!!!-->
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
